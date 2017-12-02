@@ -1,0 +1,14 @@
+C:\Users\Pc\source\repos\Ejemplos\Ejemplos\bin\Debug\Ejemplos.exe.config
+C:\Users\Pc\source\repos\Ejemplos\Ejemplos\bin\Debug\Ejemplos.exe
+C:\Users\Pc\source\repos\Ejemplos\Ejemplos\bin\Debug\Ejemplos.pdb
+C:\Users\Pc\source\repos\Ejemplos\Ejemplos\obj\Debug\Ejemplos.csprojResolveAssemblyReference.cache
+C:\Users\Pc\source\repos\Ejemplos\Ejemplos\obj\Debug\Ejemplos.csproj.CoreCompileInputs.cache
+C:\Users\Pc\source\repos\Ejemplos\Ejemplos\obj\Debug\Ejemplos.exe
+C:\Users\Pc\source\repos\Ejemplos\Ejemplos\obj\Debug\Ejemplos.pdb
+D:\DAW1\CSharp_Ejemplos\Ejemplos\Ejemplos\obj\Debug\Ejemplos.csprojResolveAssemblyReference.cache
+D:\DAW1\CSharp_Ejemplos\Ejemplos\Ejemplos\obj\Debug\Ejemplos.csproj.CoreCompileInputs.cache
+D:\DAW1\CSharp_Ejemplos\Ejemplos\Ejemplos\obj\Debug\Ejemplos.exe
+D:\DAW1\CSharp_Ejemplos\Ejemplos\Ejemplos\obj\Debug\Ejemplos.pdb
+D:\DAW1\CSharp_Ejemplos\Ejemplos\Ejemplos\bin\Debug\Ejemplos.exe.config
+D:\DAW1\CSharp_Ejemplos\Ejemplos\Ejemplos\bin\Debug\Ejemplos.exe
+D:\DAW1\CSharp_Ejemplos\Ejemplos\Ejemplos\bin\Debug\Ejemplos.pdb
