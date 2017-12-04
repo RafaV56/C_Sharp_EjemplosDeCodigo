@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Ejemplos.ProgramasEjemplo;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,12 @@ namespace Ejemplos
     {
         static void Main(string[] args)
         {
-            Calculos calculadora = new Calculos();
 
-            calculadora.Menu();
+            MetodosOpcionalesSalidaRefenciaNombres resta = new MetodosOpcionalesSalidaRefenciaNombres();
+
+            //Calculos calculadora = new Calculos();
+
+            //calculadora.Menu();
         }
     }
 

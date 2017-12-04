@@ -150,5 +150,23 @@ namespace Ejemplos
 
             Console.ReadKey();//lee solo un caracter
         }
+        
+        /*
+         * Esto es un método con parametros opcioneales, cuando se llame
+         * obligatoriamente se puede dar el parametro x, pero el y se puede omitir siendo 2
+         * pero si le quieres dar otro valor se lo aceptará
+        */
+    
+        int Potencia(int x, int y = 2)//tienen que ir al final de la lista de parametros los argumentos predeterminados
+        {
+            int resultado = 1;
+
+            for (int i = 0; i < y; i++)
+            {
+                resultado *= x;
+            }
+
+            return resultado;
+        }
     }
 }

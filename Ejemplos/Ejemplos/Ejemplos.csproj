@@ -44,10 +44,15 @@
   <ItemGroup>
     <Compile Include="Calculadora.cs" />
     <Compile Include="Program.cs" />
+    <Compile Include="ProgramasEjemplo\BreakEjemplo.cs" />
+    <Compile Include="ProgramasEjemplo\MetodosOpcionalesSalidaRefenciaNombres.cs" />
+    <Compile Include="ProgramasEjemplo\RestaReales01A01.cs" />
+    <Compile Include="ProgramasEjemplo\Resto_SumarHoras.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
