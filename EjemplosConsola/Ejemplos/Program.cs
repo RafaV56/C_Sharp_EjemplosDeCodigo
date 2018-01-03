@@ -10,11 +10,69 @@ namespace Ejemplos
     {
         static void Mai(string[] args)
         {
-            //Entero
-            int entero = 22;
+            //Enteros con signo ------------------------------------------------------
 
-            //Real
-            double real = 22.5;
+            //sbyte rango de -128 a 127
+            sbyte sbyteMin = -128;
+            sbyte sbyteMax = 127;
+            //sbyte errorsByte = 128, error2Sbyte = -129;
+
+            //short: 16 bits, de - 32,768 a 32,767
+            short shortMin = -32768;
+            short shortMax = 32767;
+            //short errorsShort = -32769, error2Short = 32768;
+
+            //int: 32 bits, de - 2,147,483,648 a 2,147,483,647
+            int intMax = 2147483647;
+            int intMin = -2147483648;
+            //int errorInt = 2147483648, error2Int = -2147483649;
+
+            //long: 64 bits, de - 9,223,372,036,854,775,808 a 9,223,372,036,854,775,807
+            long longMax = 9223372036854775807;
+            long longMin = -9223372036854775808;
+            //long errorLong= 9223372036854775808, error2Long= -9223372036854775809;
+
+            //------------------------------------------------------------------------
+
+            //Enteros sin signo ------------------------------------------------------
+
+            //byte 8 bits, de 0 a 255
+            byte byteMin = 0;
+            byte byteMax = 255;
+            //byte errorByte = -1, error2byte = 256;
+
+            //ushort: 16 bits, de 0 a 65,535
+            ushort ushortMin = 0;
+            ushort ushortMax = 65535;
+            //ushort errorsUShort = -1, error2UShort = 65536;
+
+            //uint: 32 bits, de 0 a 4,294,967,295
+            uint uintMax = 4294967295;
+            uint uintMin = 0;
+            //uint errorUInt = -1, error2Int = 4294967296;
+
+            //ulong: 64 bits, de 0 a 18,446,744,073,709,551,615
+            ulong ulongMax = 18446744073709551615;
+            ulong ulongMin = 0;
+            //ulong errorULong= 18446744073709551616, error2ULong= -1;
+
+            //------------------------------------------------------------------------
+
+            //Punto flotante ------------------------------------------------------
+
+            //float: 32 bits, de 1.5 × 10−45 a 3.4 × 1038, precisión de 7 dígitos
+
+            float floatMin = -3.999f;
+
+            //double: 64 bits, de 5.0 × 10−324 a 1.7 × 10308, precisión de 15 dígitos
+
+            double doubleMin = double.MinValue;
+
+            //decimal: 128 bits, al menos de –7.9 × 10−28 a 7.9 × 1028, con una precisión mínima de 28 dígitos
+
+            decimal decimalMin = decimal.MinValue;
+
+            //------------------------------------------------------------------------
 
             //Lógico o Boleano
             bool boleano = true;

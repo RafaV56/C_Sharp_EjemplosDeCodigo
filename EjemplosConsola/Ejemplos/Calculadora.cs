@@ -12,7 +12,9 @@ namespace Ejemplos
         static void Main(string[] args)
         {
 
-            MetodosOpcionalesSalidaRefenciaNombres resta = new MetodosOpcionalesSalidaRefenciaNombres();
+            Console.WriteLine(float.MinValue);
+            Console.ReadKey();
+            //MetodosOpcionalesSalidaRefenciaNombres resta = new MetodosOpcionalesSalidaRefenciaNombres();
 
             //Calculos calculadora = new Calculos();
 

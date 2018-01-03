@@ -48,6 +48,7 @@
     <Compile Include="ProgramasEjemplo\MetodosOpcionalesSalidaRefenciaNombres.cs" />
     <Compile Include="ProgramasEjemplo\RestaReales01A01.cs" />
     <Compile Include="ProgramasEjemplo\Resto_SumarHoras.cs" />
+    <Compile Include="ProgramasEjemplo\StructEjemplo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
