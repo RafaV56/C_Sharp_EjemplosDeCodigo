@@ -1,4 +1,7 @@
-﻿using Ejemplos.ProgramasEjemplo;
+﻿using Ejemplos.ProgramasEjemplo.structEjemplos;
+using Ejemplos.ProgramasEjemplo.delegadosEjemplos;
+using Ejemplos.ProgramasEjemplo.enumEjemplos;
+using Ejemplos.ProgramasEjemplo.matricesEjemplos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,14 +14,32 @@ namespace Ejemplos
     {
         static void Main(string[] args)
         {
+            //Ejemplo de matrices
+            MatricesEjemplo matrices = new MatricesEjemplo();
+            matrices.Empezar();
 
-            Console.WriteLine(float.MinValue);
-            Console.ReadKey();
+            //Ejemplo de enum con una baraja que tiene un enum palo
+            //EnumEjemplos enume=new EnumEjemplos();
+            //enume.Empezar();
+           
+            //EjemploDelegados ejem = new EjemploDelegados();
+            //ejem.Empezar();
+
+
+            //Ejemplo de struct con el programa de la moto
+            //LaLupaMotos motos = new LaLupaMotos();
+            //motos.Empezar();
+
+            //Console.WriteLine(float.MinValue);
+            //Console.ReadKey();
             //MetodosOpcionalesSalidaRefenciaNombres resta = new MetodosOpcionalesSalidaRefenciaNombres();
 
             //Calculos calculadora = new Calculos();
 
             //calculadora.Menu();
+
+
+            Console.ReadKey();
         }
     }
 
