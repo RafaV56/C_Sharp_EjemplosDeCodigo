@@ -45,11 +45,17 @@ namespace Chinchon
             }
         }
 
+        /// <summary>
+        /// Retorna la primera carta que tiene la baraja, y la borra
+        /// </summary>
+        /// <returns>La primera carta de la baraja</returns>
         public Carta DarCarta()
         {
             Carta carta = Cartas.ElementAt(0);
             Cartas.Remove(carta);
             return carta;
         }
+
+
     }
 }

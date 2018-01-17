@@ -53,10 +53,14 @@ namespace Chinchon
 
         public void VerCartas()
         {
+            int contador = 0;
             Cartas.Sort();
             //Puedo ver la lista más fácil
-            Cartas.ForEach(Console.WriteLine);
+            foreach (var carta in Cartas)
+            {
+                Console.WriteLine("\t{0}) {1}", ++contador, carta.ToString());
+            }
         }
-
+        
     }
 }

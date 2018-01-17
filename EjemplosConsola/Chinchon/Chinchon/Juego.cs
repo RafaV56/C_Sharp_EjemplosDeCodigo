@@ -42,24 +42,87 @@ namespace Chinchon
         /// </summary>
         private void Jugar()
         {
+            //Creo una baraja
             Baraja = new Baraja(13);
+            //Crea una lista para ver las cartas sobre la mesa
+            List<Carta> cartasEnLaMesa = new List<Carta>();
+            //La Barajo antes de repartir
             Baraja.Barajar();
+            //Por cada jugador
             for (int i = 0; i < MAXIMO_JUGADORES; i++)
             {
+                //por cada jugador se reparte su máximo de cartas
                 for (int sub = 0; sub < Jugador.MAXIMO_CARTAS; sub++)
                 {
                     jugadores.ElementAt(i).Cartas.Add(Baraja.DarCarta());
                 }
                
             }
-            //Seguir aqui. los jugadores ya tiene las cartas. 7 y sobran 20 en la baraja
-            foreach (var item in jugadores)
+            //Ahora los jugadores ya tiene las cartas 7 y sobran 24 en la baraja
+            //Ver los jugadores principales
+            cartasEnLaMesa.Add(Baraja.DarCarta());//Doy la primera carta del juego
+            while (true)//cambiar
             {
-                Console.WriteLine(item.ToString());
-                item.VerCartas();
+
+                foreach (var item in jugadores)
+                {
+                    if (!item.JugadorMaquina)
+                    {
+                        Console.WriteLine(item.ToString());
+                        item.VerCartas();
+                        Console.WriteLine("\nLa carta en la mesa es: " + cartasEnLaMesa.ElementAt(cartasEnLaMesa.Count()-1));
+                        Console.WriteLine("¿Tomar carta? [ (1:SI) - (2:NO)[ Robar de la baraja ]");
+                        byte opcion = byte.Parse(Console.ReadLine());
+                        if (opcion == 1)
+                        {
+                            //Tomo la carta de la mesa y la cambia por otra, la carta cambiada queda de ultima en la lista de cartas en la mesa
+                            Cambiar(cartasEnLaMesa, item.Cartas);
+                        }
+                        else
+                        {
+                            cartasEnLaMesa.Add(Baraja.DarCarta());//Doy nueva carta del juego
+                            Console.WriteLine("\nLa carta al robar es: " + cartasEnLaMesa.ElementAt(cartasEnLaMesa.Count() - 1));
+                            Console.WriteLine("¿Tomar carta? [ (1:SI) - (2:NO)");
+                            byte opcion2 = byte.Parse(Console.ReadLine());
+                            if (opcion2 == 1)
+                            {
+                                //Tomo la carta de la mesa y la cambia por otra, la carta cambiada queda de ultima en la lista de cartas en la mesa
+                                Cambiar(cartasEnLaMesa, item.Cartas);
+                            }
+
+                        }
+                        Console.Clear();
+                        }
+                }
+
             }
-            Console.WriteLine(Baraja.Cartas.Count());
+
+            //Ver los jugadores y sus cartas
+            //foreach (var item in jugadores)
+            //{
+            //    Console.WriteLine(item.ToString());
+            //    item.VerCartas();
+            //}
+            //Console.WriteLine(Baraja.Cartas.Count());
         }
+ 
+        /// <summary>
+        /// Cambia una carta de la baraja del jugador por otra la última que llega de la mesa
+        /// </summary>
+        /// <param name="cartasEnLaMesa"></param>
+        /// <param name="cartas"></param>
+        private void Cambiar(List<Carta> cartasEnLaMesa, List<Carta> cartas)
+        {
+            Console.WriteLine("Escriba el número de la carta a cambiar [ 1-7 ]");
+            byte opcion = byte.Parse(Console.ReadLine());
+            Carta nueva = cartasEnLaMesa.ElementAt(cartasEnLaMesa.Count() - 1);
+            Carta vieja = cartas.ElementAt(opcion - 1);
+            cartas.Remove(vieja);
+            cartasEnLaMesa.Remove(nueva);
+            cartas.Add(nueva);
+            cartasEnLaMesa.Add(vieja);
+        }
+    
 
         private void CrearBaraja()
         {

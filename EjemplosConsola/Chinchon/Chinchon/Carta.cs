@@ -21,7 +21,7 @@ namespace Chinchon
 
         public override string ToString()
         {
-            return "Palo: "+Palo+" Numero:"+Numero;
+            return ""+Palo+" : " + "[" + (Numero == 1 ? "A" : Numero == 11 ? "J" : Numero == 12 ? "Q" : Numero == 13 ? "K" : Convert.ToString(Numero)) + "]";
         }
 
         public int CompareTo(Carta other)
