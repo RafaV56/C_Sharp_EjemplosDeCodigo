@@ -22,6 +22,7 @@ namespace Chinchon
                 Cartas.Add(new Carta(i, Palo.TREBOLES));
                 Cartas.Add(new Carta(i, Palo.PICAS));
             }
+            Cartas.Add(new Carta(0, Palo.JOKER));
         }
 
         public void VerBaraja()

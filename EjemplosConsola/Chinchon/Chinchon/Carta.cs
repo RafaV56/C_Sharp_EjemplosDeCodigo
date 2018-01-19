@@ -9,11 +9,19 @@ namespace Chinchon
     class Carta : IComparable<Carta>
     {
         //El numero de la carta en el palo
-        public byte Numero { get; set; }
+        public int Numero { get; set; }
         //Tiene que tener un Palo, corazones, diamantes etc...
         public Palo Palo { get; set; }
+        /// <summary>
+        /// True si pertenece a cuarteto  o trio del mismo número
+        /// </summary>
+        public bool Trio { get; set; }
+        /// <summary>
+        /// True si pertenece a escalera del mismo palo
+        /// </summary>
+        public bool Escalera { get; set; }
 
-        public Carta(byte Numero,Palo Palo)
+        public Carta(int Numero,Palo Palo)
         {
             this.Numero = Numero;
             this.Palo = Palo;
@@ -21,7 +29,13 @@ namespace Chinchon
 
         public override string ToString()
         {
-            return ""+Palo+" : " + "[" + (Numero == 1 ? "A" : Numero == 11 ? "J" : Numero == 12 ? "Q" : Numero == 13 ? "K" : Convert.ToString(Numero)) + "]";
+            return "" + Palo + " : " + "["
+                + (Numero == 1 ? "A" :
+                Numero == 11 ? "J" :
+                Numero == 12 ? "Q" :
+                Numero == 13 ? "K" :
+                Numero == 0 ? "?" :
+                Convert.ToString(Numero)) + "]";//+"\t [Trios]:"+Trio+" \t[Escalera]:"+Escalera;
         }
 
         public int CompareTo(Carta other)

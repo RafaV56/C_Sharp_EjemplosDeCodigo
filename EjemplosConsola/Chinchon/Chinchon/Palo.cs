@@ -12,6 +12,7 @@ namespace Chinchon
         CORAZONES,
         DIAMANTES,
         PICAS,
-        TREBOLES
+        TREBOLES,
+        JOKER
     }
 }
